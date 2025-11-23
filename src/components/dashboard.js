@@ -114,7 +114,7 @@ export default function DashboardPage() {
       try {
         await deleteTask(task.id);
         setAuditLogs([]); 
-        await fetchTasks(); e
+        await fetchTasks(); 
       } catch (error) {
         console.error('Failed to delete task:', error);
       }
